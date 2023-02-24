@@ -1,0 +1,7 @@
+@import '../../styles/variaveis';
+
+.footerMain {
+  @include center(center, center, 10vh, 100vw);
+  @include colors();
+  color: var(--colorLight);
+}

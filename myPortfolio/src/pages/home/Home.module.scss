@@ -1,0 +1,7 @@
+@import '../../styles/variaveis';
+
+.homeMain {
+  @include center(center, center, 80vh, 100vw);
+  @include colors();
+  color: var(--colorLight);
+}

@@ -1,0 +1,44 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cor {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.homeMain {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+  background: linear-gradient(to right, #d000ff, #3f006c, #8400ff, rgba(0, 174, 255, 0.9843137255), #f9009e);
+  background-size: 1400% 1400%;
+  animation: gradient 50s ease infinite;
+  color: var(--colorLight);
+}/*# sourceMappingURL=Home.module.css.map */

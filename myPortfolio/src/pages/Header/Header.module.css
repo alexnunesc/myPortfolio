@@ -1,0 +1,100 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cor {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.headerMain {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  width: 100vw;
+  color: var(--colorLight);
+}
+.headerMain .headerNav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  width: 50vw;
+  gap: 1em;
+}
+.headerMain .headerNav ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  width: 50vw;
+  gap: 1em;
+  list-style: none;
+}
+.headerMain .headerNav ul li {
+  cursor: pointer;
+  position: relative;
+}
+.headerMain .headerNav ul li hr {
+  width: 0;
+  height: 0.3em;
+  border-radius: 1em;
+  background: linear-gradient(to right, #d000ff, #3f006c, #8400ff, rgba(0, 174, 255, 0.9843137255), #f9009e);
+  background-size: 1400% 1400%;
+  border: none;
+  position: absolute;
+  animation: 0.5s ease forwards;
+}
+.headerMain .headerNav ul li:hover hr {
+  animation-name: grow;
+}
+.headerMain .iconsHeader {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 1em;
+  cursor: pointer;
+}
+.headerMain .iconsHeader span {
+  background: linear-gradient(to right, #d000ff, #3f006c, #8400ff, rgba(0, 174, 255, 0.9843137255), #f9009e);
+  background-size: 1400% 1400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: cor 60s ease infinite;
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}/*# sourceMappingURL=Header.module.css.map */

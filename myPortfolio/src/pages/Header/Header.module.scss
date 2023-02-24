@@ -1,0 +1,58 @@
+@import '../../styles/variaveis';
+
+.headerMain {
+  @include center(center, center, 10vh, 100vw);
+  // @include colors();
+  color: var(--colorLight);
+
+  .headerNav {
+    @include center(center, center, 10vh, 50vw);
+    gap: 1em;
+
+    ul {
+      @include center(center, center, 10vh, 50vw);
+      gap: 1em;
+      list-style: none;
+  
+      li {
+        hr {
+          width: 0;
+          height: 0.3em;
+          border-radius: 1em;
+          @include colorsPers();
+          border: none;
+          position: absolute;
+          animation: 0.5s ease forwards;
+        }
+        cursor: pointer;
+        position: relative;
+      }
+  
+      li:hover {
+        hr{
+          animation-name: grow;
+        }
+      }
+  
+    }
+  }
+
+  .iconsHeader {
+    @include center(center, center, 100%, 100%);
+    gap: 1em;
+    cursor: pointer;
+    span {
+      @include cor();
+    }
+  }
+
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}

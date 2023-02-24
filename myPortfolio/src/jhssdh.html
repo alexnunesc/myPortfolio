@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #111;
+    }
+
+    .divis {
+      position: absolute;
+      background-color: #FFF;
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* animação */
+    .animado {
+      animation: mover 1s linear infinite;
+    }
+
+    /* mousemove */
+    body:hover .animado {
+      animation-play-state: paused;
+    }
+
+    @keyframes mover {
+      0% {
+        transform: translateX(-50%) scaleY(0.2);
+      }
+      50% {
+        transform: translateX(-50%) scaleY(1.5);
+      }
+      100% {
+        transform: translateX(-50%) scaleY(0.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="divis animado"></div>
+  <div class="divis animado"></div>
+  <div class="divis animado"></div>
+  <div class="divis animado"></div>
+  <div class="divis animado"></div>
+</body>
+</html>
