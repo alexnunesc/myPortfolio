@@ -37,7 +37,6 @@
   justify-content: center;
   height: 10vh;
   width: 100vw;
-  color: var(--colorLight);
 }
 .headerMain .headerNav {
   align-items: center;

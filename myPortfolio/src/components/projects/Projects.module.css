@@ -1,0 +1,63 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cor {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.mainProjects {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--colorFont);
+  color: var(--colorLight);
+  padding: 0 10%;
+  overflow: hidden;
+}
+.mainProjects .element {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  flex-direction: column;
+  padding: 3em;
+}
+.mainProjects .element img {
+  width: 100%;
+}
+.mainProjects .swipes {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+}/*# sourceMappingURL=Projects.module.css.map */

@@ -1,3 +1,4 @@
+// $theme: "themeLight";
 
 @mixin center($alig, $just, $height, $width) {
   align-items: $alig;
@@ -5,6 +6,17 @@
   justify-content: $just;
   height: $height;
   width: $width;
+}
+
+
+@mixin themeLight() {
+  color: black;
+  background-color: white;
+}
+
+@mixin themeDark() {
+  color: white;
+  background-color: black;
 }
 
 @mixin colors() {

@@ -1,16 +1,13 @@
-import './App.css'
-import Footer from './pages/footer/Footer'
-import Header from './pages/Header/Header'
-import Home from './pages/home/Home'
+import React from 'react';
+import MyComponent from './components/MyComponent';
+import ThemeProvider from './components/ThemeProvider';
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Home />
-      <Footer />
-    </div>
-  )
+    <ThemeProvider>
+      <MyComponent />
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;

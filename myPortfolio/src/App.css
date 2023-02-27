@@ -9,12 +9,34 @@
     background-position: 0% 50%;
   }
 }
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cor {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 p {
   color: var(--main-color);
 }
 
 :root {
-  --color-pink: hotpink;
+  --color-pink: #f9009e;
   --color-roxoFraco: rgb(203, 105, 255);
   --color-roxo: rgb(59, 3, 83);
   --color-azul: rgb(106, 16, 224);
@@ -22,13 +44,24 @@ p {
   --colorDark: white;
   --fundoLight: rgb(255, 255, 255);
   --colorDark: rgba(0, 0, 0, 0.516);
+  --colorFont: #3d535f;
+  --colorFont2: #7f00ff;
 }
 
+/* --fundoDark: #0F1624;
+  --colorDark: white;
+
+  --fundoLight: white;
+  --colorLight: rgba(0, 0, 0, 0.516);
+
+  --colorFontLight: #3d535f;
+  --colorFontLight2: #7f00ff; */
 .app {
   background-color: var(--fundoDark);
   align-items: center;
   display: flex;
   justify-content: center;
+  height: 100%;
   width: 100vw;
   flex-direction: column;
 }/*# sourceMappingURL=App.css.map */

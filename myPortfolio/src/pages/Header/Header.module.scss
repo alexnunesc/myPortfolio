@@ -1,9 +1,9 @@
+// $theme: "themeLight";
 @import '../../styles/variaveis';
-
 .headerMain {
   @include center(center, center, 10vh, 100vw);
   // @include colors();
-  color: var(--colorLight);
+  // color: var(--colorLight);
 
   .headerNav {
     @include center(center, center, 10vh, 50vw);
@@ -11,6 +11,8 @@
 
     ul {
       @include center(center, center, 10vh, 50vw);
+
+      // @include #{$theme}();
       gap: 1em;
       list-style: none;
   

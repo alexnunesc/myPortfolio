@@ -41,4 +41,5 @@
   background-size: 1400% 1400%;
   animation: gradient 50s ease infinite;
   color: var(--colorLight);
+  z-index: 1;
 }/*# sourceMappingURL=Footer.module.css.map */

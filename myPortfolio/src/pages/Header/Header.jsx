@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import styles from './Header.module.css';
 
 // icons
@@ -7,20 +7,30 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Header = () => {
+
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  const handleClick = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
+  
+  const theme = isDarkTheme ? 'themeDark' : 'themeLight';
+  console.log(theme);
+
   return (
     <header className={styles.headerMain}>
       <nav className={styles.headerNav}>
-        <ul>
+        <ul className={styles.uls}>
           <li>
-            Home
+            <a href="#project">Home</a>
             <hr />
           </li>
           <li>
-            Projetos
+            <a href="#project">Projetos</a>
             <hr />
           </li>
           <li>
-            Sobre
+            <a href="#project">Sobre</a>
             <hr />
           </li>
         </ul>
@@ -29,7 +39,8 @@ const Header = () => {
         <span>ANC</span>
         <GitHubIcon className={ styles.icons } />
         <LinkedInIcon className={ styles.icons } />
-        <WhatsAppIcon />
+        <WhatsAppIcon className={ styles.icons } />
+        <button onClick={handleClick}>Toggle Theme</button>
       </section>
     </header>
   )

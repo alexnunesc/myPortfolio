@@ -1,0 +1,28 @@
+@import '../../styles/variaveis';
+
+.mainProjects {
+  @include center(center, center, 100vh, 100%);
+  // @include colors();
+  background-color: var(--colorFont);
+  color: var(--colorLight);
+  padding: 0 10%;
+  overflow: hidden;
+  // gap: 10em;
+
+  .element {
+    // background-color: rgb(138, 138, 138);
+    // border-radius: 100%;
+    @include center(center, center, 50vh, 100%);
+    flex-direction: column;
+    padding: 3em;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .swipes {
+    @include center(center, center, 50vh, 100%);
+  }
+
+}

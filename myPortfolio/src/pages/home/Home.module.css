@@ -35,10 +35,161 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  height: 80vh;
-  width: 100vw;
-  background: linear-gradient(to right, #d000ff, #3f006c, #8400ff, rgba(0, 174, 255, 0.9843137255), #f9009e);
-  background-size: 1400% 1400%;
-  animation: gradient 50s ease infinite;
+  height: calc(100vh - 80px);
+  width: 100%;
+  background-color: var(--fundoLight);
   color: var(--colorLight);
+  padding: 0 10%;
+  overflow: hidden;
+  gap: 10em;
+}
+.homeMain .cols {
+  width: 50%;
+}
+.homeMain .cols .topLine {
+  display: block;
+  position: relative;
+  font-size: 3em;
+  letter-spacing: 5px;
+  color: var(--colorFont);
+}
+.homeMain .cols .topLine::after {
+  border-radius: 1em;
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: var(--colorFont2);
+}
+.homeMain .cols h1 {
+  display: block;
+  font-size: 5em;
+  font-weight: 900;
+  color: var(--colorFont);
+}
+.homeMain .cols h1 .multiText {
+  color: var(--colorFont2);
+  text-transform: capitalize;
+  font-size: 1em;
+}
+.homeMain .cols p {
+  display: block;
+  width: 90%;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  color: var(--colorFont);
+}
+.homeMain .cols .btns {
+  display: flex;
+  width: 100%;
+  position: relative;
+  gap: 1em;
+}
+.homeMain .cols .btns button {
+  outline: none;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--colorLight);
+  background-color: var(--colorFont);
+  padding: 8px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+.homeMain .cols .btns button:hover {
+  background-color: var(--colorFont2);
+}
+.homeMain .imgbox {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  width: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 40%;
+}
+.homeMain .imgbox .imgProfile {
+  position: relative;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  top: -100px;
+  right: 5px;
+  transform: rotateY(180deg);
+  animation: animateProfile 4s linear infinite;
+  margin-left: 30%;
+  margin-top: 20%;
+}
+@keyframes animateProfile {
+  50% {
+    right: 30px;
+    top: -90px;
+  }
+}
+.homeMain .imgbox .imgBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-35deg);
+  width: 160%;
+  filter: saturate(200%);
+  animation: animateBackground 4s linear infinite;
+}
+@keyframes animateBackground {
+  50% {
+    right: 49%;
+    top: 51%;
+    width: 155%;
+  }
+}
+
+.cols0 {
+  z-index: 5;
+}
+
+.homeMain::before {
+  position: absolute;
+  content: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg");
+  height: 200px;
+  width: 200px;
+  left: -32px;
+  top: 55%;
+  animation: spin infinite 20s linear;
+}
+
+.homeMain::after {
+  position: absolute;
+  content: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg");
+  height: 90px;
+  width: 90px;
+  left: 35%;
+  top: 12%;
+  animation: objectTwo 6s, linear infinite;
+}
+
+@keyframes objectTwo {
+  50% {
+    left: -13%;
+    top: 41%;
+  }
+}
+@keyframes objectOne {
+  50% {
+    left: 35%;
+    top: 10%;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=Home.module.css.map */

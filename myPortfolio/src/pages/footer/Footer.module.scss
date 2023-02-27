@@ -4,4 +4,5 @@
   @include center(center, center, 10vh, 100vw);
   @include colors();
   color: var(--colorLight);
+  z-index: 1;
 }
